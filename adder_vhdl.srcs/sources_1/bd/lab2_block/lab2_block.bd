@@ -1,0 +1,140 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3C1D451A3C1D451A",
+      "device": "xc7a100tcsg324-1",
+      "name": "lab2_block",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "half_adder_0": "",
+      "full_adder_0": ""
+    },
+    "ports": {
+      "A_0": {
+        "direction": "I"
+      },
+      "B_0": {
+        "direction": "I"
+      },
+      "A_1": {
+        "direction": "I"
+      },
+      "B_1": {
+        "direction": "I"
+      },
+      "SUM_0": {
+        "direction": "O"
+      },
+      "SUM_1": {
+        "direction": "O"
+      },
+      "CARRYout_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "half_adder_0": {
+        "vlnv": "xilinx.com:module_ref:half_adder:1.0",
+        "xci_name": "lab2_block_half_adder_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "half_adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "SUM": {
+            "direction": "O"
+          },
+          "CARRY": {
+            "direction": "O"
+          }
+        }
+      },
+      "full_adder_0": {
+        "vlnv": "xilinx.com:module_ref:full_adder:1.0",
+        "xci_name": "lab2_block_full_adder_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "full_adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "CARRYin": {
+            "direction": "I"
+          },
+          "SUM": {
+            "direction": "O"
+          },
+          "CARRYout": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "half_adder_0_CARRY": {
+        "ports": [
+          "half_adder_0/CARRY",
+          "full_adder_0/CARRYin"
+        ]
+      },
+      "A_0_1": {
+        "ports": [
+          "A_0",
+          "half_adder_0/A"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "B_0",
+          "half_adder_0/B"
+        ]
+      },
+      "A_1_1": {
+        "ports": [
+          "A_1",
+          "full_adder_0/A"
+        ]
+      },
+      "B_1_1": {
+        "ports": [
+          "B_1",
+          "full_adder_0/B"
+        ]
+      },
+      "half_adder_0_SUM": {
+        "ports": [
+          "half_adder_0/SUM",
+          "SUM_0"
+        ]
+      },
+      "full_adder_0_SUM": {
+        "ports": [
+          "full_adder_0/SUM",
+          "SUM_1"
+        ]
+      },
+      "full_adder_0_CARRYout": {
+        "ports": [
+          "full_adder_0/CARRYout",
+          "CARRYout_0"
+        ]
+      }
+    }
+  }
+}

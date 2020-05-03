@@ -1,0 +1,632 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Oct 10 18:03:06 2019
+# Process ID: 13552
+# Current directory: C:/Users/kaadje.INTRA/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12256
+# Log file: C:/Users/kaadje.INTRA/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/kaadje.INTRA/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project P:/VHDL/lab3/lab3/lab3.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Xilinx/kayode/lab3' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'P:/VHDL/lab3/lab2/Nexys4DDR_Master.xdc', nor could it be found using path 'C:/Xilinx/kayode/lab2/Nexys4DDR_Master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 794.242 ; gain = 191.801
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: comparator
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1246.219 ; gain = 174.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'comparator' [P:/VHDL/lab3/lab3/lab3.srcs/sources_1/new/comparator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (1#1) [P:/VHDL/lab3/lab3/lab3.srcs/sources_1/new/comparator.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1286.266 ; gain = 214.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1286.266 ; gain = 214.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1286.266 ; gain = 214.148
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+4 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-275] File does not exist [P:/VHDL/lab3/lab2/Nexys4DDR_Master.xdc]
+close_project
+create_project adder_vhdl C:/Xilinx/Kayode/lab2/adder_vhdl -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+file mkdir C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new
+close [ open C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/half_adder.vhd w ]
+add_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/half_adder.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd w ]
+add_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/lab2.vhd w ]
+add_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/lab2.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_test.vhd w ]
+add_files -fileset sim_1 C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_test.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab2_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj lab2_test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'full_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/half_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'half_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/lab2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab2_test'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+"xelab -wto c9ba24d5cca349e4ac63388ab02cef86 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab2_test_behav xil_defaultlib.lab2_test -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c9ba24d5cca349e4ac63388ab02cef86 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab2_test_behav xil_defaultlib.lab2_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.half_adder [half_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.lab2 [lab2_default]
+Compiling architecture behavioral of entity xil_defaultlib.lab2_test
+Built simulation snapshot lab2_test_behav
+
+****** Webtalk v2019.1.2 (64-bit)
+  **** SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+  **** IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim/xsim.dir/lab2_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim/xsim.dir/lab2_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Oct 10 19:56:01 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 109.297 ; gain = 23.652
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 10 19:56:01 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 1348.660 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '27' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab2_test_behav -key {Behavioral:sim_1:Functional:lab2_test} -tclbatch {lab2_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source lab2_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab2_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:33 . Memory (MB): peak = 1382.594 ; gain = 33.934
+run 320 us
+run all
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 320 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 320 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 1399.422 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab2_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj lab2_test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'full_adder'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+"xelab -wto c9ba24d5cca349e4ac63388ab02cef86 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab2_test_behav xil_defaultlib.lab2_test -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c9ba24d5cca349e4ac63388ab02cef86 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab2_test_behav xil_defaultlib.lab2_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.half_adder [half_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.lab2 [lab2_default]
+Compiling architecture behavioral of entity xil_defaultlib.lab2_test
+Built simulation snapshot lab2_test_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1399.422 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1399.422 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:44 . Memory (MB): peak = 1399.422 ; gain = 0.000
+run 320 ns
+run 320 ns
+run 320 ns
+run all
+run all
+run all
+run 320 ns
+run 320 ns
+run 320 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 320 ns
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Oct 10 20:14:41 2019] Launched synth_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1/runme.log
+[Thu Oct 10 20:14:41 2019] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1399.422 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Thu Oct 10 20:19:05 2019] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Oct 10 20:20:58 2019] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/runme.log
+add_files -fileset constrs_1 -norecurse C:/Xilinx/Kayode/lab2/Nexys4DDR_Master.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Oct 10 20:26:48 2019] Launched synth_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1/runme.log
+[Thu Oct 10 20:26:48 2019] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Oct 10 20:31:22 2019] Launched synth_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1/runme.log
+[Thu Oct 10 20:31:22 2019] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2109.207 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2109.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2109.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 2235.453 ; gain = 647.402
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1.2
+  **** Build date : Aug  9 2019 at 17:39:47
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4B9D9A
+set_property PROGRAM.FILE {C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/lab2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/lab2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_bd_design "lab2_block"
+Wrote  : <C:\Xilinx\Kayode\lab2\adder_vhdl\adder_vhdl.srcs\sources_1\bd\lab2_block\lab2_block.bd> 
+update_compile_order -fileset sources_1
+open_bd_design {C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/lab2_block.bd}
+create_bd_cell -type module -reference lab2 lab2_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+delete_bd_objs [get_bd_cells lab2_0]
+create_bd_cell -type module -reference half_adder half_adder_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {0.5 -254 -46} [get_bd_cells half_adder_0]
+create_bd_cell -type module -reference full_adder full_adder_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {0.5 -652 -175} [get_bd_cells half_adder_0]
+connect_bd_net [get_bd_pins half_adder_0/CARRY] [get_bd_pins full_adder_0/CARRYin]
+startgroup
+make_bd_pins_external  [get_bd_pins half_adder_0/A]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins half_adder_0/B]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins full_adder_0/A]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins full_adder_0/B]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins full_adder_0/SUM]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_pins full_adder_0/SUM]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+make_bd_pins_external  [get_bd_pins half_adder_0/SUM]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins full_adder_0/SUM]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins full_adder_0/CARRYout]
+endgroup
+make_wrapper -files [get_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/lab2_block.bd] -top
+Wrote  : <C:\Xilinx\Kayode\lab2\adder_vhdl\adder_vhdl.srcs\sources_1\bd\lab2_block\lab2_block.bd> 
+Wrote  : <C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/ui/bd_6fdfa93.ui> 
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/synth/lab2_block.v
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/sim/lab2_block.v
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+add_files -norecurse C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v
+update_compile_order -fileset sources_1
+set_property top lab2_block_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_block_wrapper_test.vhd w ]
+add_files -fileset sim_1 C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_block_wrapper_test.vhd
+update_compile_order -fileset sim_1
+set_property top lab2_block_wrapper_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_block_wrapper_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/half_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/lab2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_block_wrapper_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/half_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/lab2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_block_wrapper_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/half_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/lab2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_block_wrapper_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/half_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/lab2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_block_wrapper_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/half_adder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/lab2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/new/full_adder.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property target_language VHDL [current_project]
+export_ip_user_files -of_objects  [get_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/lab2_block.bd] -top
+INFO: [BD 41-1662] The design 'lab2_block.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/synth/lab2_block.vhd
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/sim/lab2_block.vhd
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.vhd
+add_files -norecurse C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.vhd
+update_compile_order -fileset sources_1
+save_wave_config {C:/Xilinx/Kayode/lab2/adder_vhdl/lab2_task1.wcfg}
+add_files -fileset sim_1 -norecurse C:/Xilinx/Kayode/lab2/adder_vhdl/lab2_task1.wcfg
+set_property xsim.view C:/Xilinx/Kayode/lab2/adder_vhdl/lab2_task1.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 3897.270 ; gain = 0.074
+generate_target Simulation [get_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/lab2_block.bd]
+INFO: [BD 41-1662] The design 'lab2_block.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/synth/lab2_block.vhd
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/sim/lab2_block.vhd
+VHDL Output written to : C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block half_adder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block full_adder_0 .
+Exporting to file C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hw_handoff/lab2_block.hwh
+Generated Block Design Tcl file C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hw_handoff/lab2_block_bd.tcl
+Generated Hardware Definition File C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/synth/lab2_block.hwdef
+export_ip_user_files -of_objects [get_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/lab2_block.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/lab2_block.bd] -directory C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.ip_user_files/sim_scripts -ip_user_files_dir C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.ip_user_files -ipstatic_source_dir C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.cache/compile_simlib/modelsim} {questa=C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.cache/compile_simlib/questa} {riviera=C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.cache/compile_simlib/riviera} {activehdl=C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab2_block_wrapper_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj lab2_block_wrapper_test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.ip_user_files/bd/lab2_block/ip/lab2_block_half_adder_0_0/sim/lab2_block_half_adder_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab2_block_half_adder_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.ip_user_files/bd/lab2_block/ip/lab2_block_full_adder_0_0/sim/lab2_block_full_adder_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab2_block_full_adder_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.ip_user_files/bd/lab2_block/sim/lab2_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab2_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sources_1/bd/lab2_block/hdl/lab2_block_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab2_block_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.srcs/sim_1/new/lab2_block_wrapper_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab2_block_wrapper_test'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+"xelab -wto c9ba24d5cca349e4ac63388ab02cef86 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot lab2_block_wrapper_test_behav xil_defaultlib.lab2_block_wrapper_test -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c9ba24d5cca349e4ac63388ab02cef86 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot lab2_block_wrapper_test_behav xil_defaultlib.lab2_block_wrapper_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling architecture behavioral of entity xil_defaultlib.half_adder [half_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture lab2_block_full_adder_0_0_arch of entity xil_defaultlib.lab2_block_full_adder_0_0 [lab2_block_full_adder_0_0_defaul...]
+Compiling architecture lab2_block_half_adder_0_0_arch of entity xil_defaultlib.lab2_block_half_adder_0_0 [lab2_block_half_adder_0_0_defaul...]
+Compiling architecture structure of entity xil_defaultlib.lab2_block [lab2_block_default]
+Compiling architecture structure of entity xil_defaultlib.lab2_block_wrapper [lab2_block_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.lab2_block_wrapper_test
+Built simulation snapshot lab2_block_wrapper_test_behav
+
+****** Webtalk v2019.1.2 (64-bit)
+  **** SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+  **** IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim/xsim.dir/lab2_block_wrapper_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim/xsim.dir/lab2_block_wrapper_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Oct 10 21:00:31 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 109.270 ; gain = 23.340
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 10 21:00:31 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 3943.500 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '25' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab2_block_wrapper_test_behav -key {Behavioral:sim_1:Functional:lab2_block_wrapper_test} -tclbatch {lab2_block_wrapper_test.tcl} -protoinst "protoinst_files/lab2_block.protoinst" -view {C:/Xilinx/Kayode/lab2/adder_vhdl/lab2_task1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/lab2_block.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Xilinx/Kayode/lab2/adder_vhdl/lab2_task1.wcfg
+WARNING: Simulation object /lab2_test/A was not found in the design.
+WARNING: Simulation object /lab2_test/B was not found in the design.
+WARNING: Simulation object /lab2_test/SUM0 was not found in the design.
+WARNING: Simulation object /lab2_test/SUM1 was not found in the design.
+WARNING: Simulation object /lab2_test/CARRY was not found in the design.
+source lab2_block_wrapper_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab2_block_wrapper_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:34 . Memory (MB): peak = 3943.500 ; gain = 0.000
+run 320 ns
+run 320 ns
+run 320 ns
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 3943.500 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab2_block_wrapper_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj lab2_block_wrapper_test_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+"xelab -wto c9ba24d5cca349e4ac63388ab02cef86 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot lab2_block_wrapper_test_behav xil_defaultlib.lab2_block_wrapper_test -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c9ba24d5cca349e4ac63388ab02cef86 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot lab2_block_wrapper_test_behav xil_defaultlib.lab2_block_wrapper_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab2_block_wrapper_test_behav -key {Behavioral:sim_1:Functional:lab2_block_wrapper_test} -tclbatch {lab2_block_wrapper_test.tcl} -protoinst "protoinst_files/lab2_block.protoinst" -view {C:/Xilinx/Kayode/lab2/adder_vhdl/lab2_task1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/lab2_block.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Xilinx/Kayode/lab2/adder_vhdl/lab2_task1.wcfg
+WARNING: Simulation object /lab2_test/A was not found in the design.
+WARNING: Simulation object /lab2_test/B was not found in the design.
+WARNING: Simulation object /lab2_test/SUM0 was not found in the design.
+WARNING: Simulation object /lab2_test/SUM1 was not found in the design.
+WARNING: Simulation object /lab2_test/CARRY was not found in the design.
+source lab2_block_wrapper_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab2_block_wrapper_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3943.500 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 320 ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1029] Generation completed for the IP Integrator block half_adder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block full_adder_0 .
+[Thu Oct 10 21:02:51 2019] Launched lab2_block_half_adder_0_0_synth_1, lab2_block_full_adder_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab2_block_half_adder_0_0_synth_1: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/lab2_block_half_adder_0_0_synth_1/runme.log
+lab2_block_full_adder_0_0_synth_1: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/lab2_block_full_adder_0_0_synth_1/runme.log
+synth_1: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1/runme.log
+[Thu Oct 10 21:02:51 2019] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3943.500 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Oct 10 21:09:50 2019] Launched synth_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1/runme.log
+[Thu Oct 10 21:09:50 2019] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Oct 10 21:11:39 2019] Launched synth_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/synth_1/runme.log
+[Thu Oct 10 21:11:39 2019] Launched impl_1...
+Run output will be captured here: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.runs/impl_1/lab2_block_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+archive_project C:/Xilinx/Kayode/lab2/adder_vhdl.xpr.zip -temp_dir C:/Users/kaadje.INTRA/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13552-ICT-50112K -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/kaadje.INTRA/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13552-ICT-50112K' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/kaadje.INTRA/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13552-ICT-50112K/PrjAr/_X_'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_block_half_adder_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_block_full_adder_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'lab2_block_half_adder_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'lab2_block_full_adder_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_block_full_adder_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_block_full_adder_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_block_half_adder_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_block_half_adder_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

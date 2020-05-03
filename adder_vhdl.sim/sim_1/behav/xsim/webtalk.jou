@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Oct 10 21:01:51 2019
+# Process ID: 3912
+# Current directory: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim/xsim.dir/lab2_block_wrapper_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Xilinx/Kayode/lab2/adder_vhdl/adder_vhdl.sim/sim_1/behav/xsim/xsim.dir/lab2_block_wrapper_test_behav/webtalk/xsim_webtalk.tcl -notrace
